@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form id="myForm" action="/route.html" onsubmit="return validateForm()">
+    <div>
+      <label for="UserID">UserName:</label>
+      <input type="text" placeholder="Enter your name" id="UserID">
+      <p class="info">Enter a valid UserName</p>
+    </div>
+
+    <div>
+      <label for="contact">Contact:</label>
+      <input type="number" placeholder="Enter your contact" id="contact">
+      <p class="info">Enter a valid contact number</p>
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" placeholder="Enter your password" id="password">
+      <p class="info">Enter a strong password</p>
+    </div>
+
+    <div>
+      <label for="confirmpassword">Confirm Password:</label>
+      <input type="password" placeholder="Confirm your password" id="confirmpassword">
+      <p class="info">Passwords must match</p>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
